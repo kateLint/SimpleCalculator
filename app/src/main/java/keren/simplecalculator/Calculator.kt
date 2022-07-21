@@ -30,8 +30,7 @@ fun Calculator (
         Column(modifier = Modifier
             .fillMaxWidth()
             .fillMaxHeight()
-            .align(Alignment.BottomCenter)
-            ,
+            .align(Alignment.BottomCenter),
             verticalArrangement = Arrangement.Bottom
 
 
@@ -47,8 +46,11 @@ fun Calculator (
                 color = Color.White
             )
             //First Row
-            Row (modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.spacedBy(buttonSpacing)
+            Row (modifier = Modifier.fillMaxWidth()
+                .padding(bottom = buttonSpacing),
+
+            horizontalArrangement = Arrangement.spacedBy(buttonSpacing),
+
                 ){
 
                 //AC Button
@@ -72,7 +74,8 @@ fun Calculator (
             }
 
             //Second Row
-            Row (modifier = Modifier.fillMaxWidth(),
+            Row (modifier = Modifier.fillMaxWidth()
+                .padding(bottom = buttonSpacing),
                 horizontalArrangement = Arrangement.spacedBy(buttonSpacing)
             ){
 
@@ -99,7 +102,9 @@ fun Calculator (
             }
 
             //Third Row
-            Row (modifier = Modifier.fillMaxWidth(),
+            Row (modifier = Modifier.fillMaxWidth()
+                .padding(bottom = buttonSpacing),
+
                 horizontalArrangement = Arrangement.spacedBy(buttonSpacing)
             ){
 
@@ -125,7 +130,8 @@ fun Calculator (
 
             }
             //Forth Row
-            Row (modifier = Modifier.fillMaxWidth(),
+            Row (modifier = Modifier.fillMaxWidth()
+                .padding(bottom = buttonSpacing),
                 horizontalArrangement = Arrangement.spacedBy(buttonSpacing)
             ){
 
@@ -152,7 +158,8 @@ fun Calculator (
             }
 
             //Fifth Row
-            Row (modifier = Modifier.fillMaxWidth(),
+            Row (modifier = Modifier.fillMaxWidth()
+                .padding(bottom = buttonSpacing),
                 horizontalArrangement = Arrangement.spacedBy(buttonSpacing)
             ){
 
